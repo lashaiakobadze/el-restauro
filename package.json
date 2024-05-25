@@ -41,10 +41,10 @@
     }
   },
   "lint-staged": {
-    "*.js": ["eslint --fix", "prettier --write"],
-    "*.jsx": ["eslint --fix", "prettier --write"],
-    "*.ts": ["eslint --fix", "prettier --write"],
-    "*.tsx": ["eslint --fix", "prettier --write"],
-    "*.{js,jsx,ts,tsx,json,css,scss,md}": ["prettier --write"]
+    "*.js": "eslint --fix",
+    "*.jsx": "eslint --fix",
+    "*.ts": "eslint --fix",
+    "*.tsx": "eslint --fix",
+    "*.{js,jsx,ts,tsx,json,css,scss,md}": "prettier --write"
   }
 }
