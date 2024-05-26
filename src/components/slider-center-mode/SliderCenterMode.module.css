@@ -1,0 +1,6 @@
+.slideImage {
+  width: 888px;
+  height: 332px;
+  object-fit: cover;
+  border-radius: 10px;
+}

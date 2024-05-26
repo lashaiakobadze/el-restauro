@@ -1,0 +1,31 @@
+/* components/SliderWithThumbnails.module.css */
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.thumbnails {
+  width: 20%;
+  margin-right: 20px;
+}
+
+.thumbnail img {
+  width: 100%;
+  cursor: pointer;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.mainSlider {
+  width: 80%;
+}
+
+.mainImage img {
+  width: 100%;
+  height: auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black; /* Customize the color of the arrows */
+}
