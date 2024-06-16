@@ -19,6 +19,9 @@ const config: Config = {
       colors: {
         customGray: '#2B2731',
         customRed: '#e63946',
+        customGraySecond: '#f9f9f9',
+        customHover: '#f1f1f1',
+        customBlue: '#23447c',
       },
     },
   },

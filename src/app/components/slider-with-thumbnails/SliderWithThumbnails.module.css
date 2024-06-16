@@ -1,7 +1,6 @@
 /* components/SliderWithThumbnails.module.css */
 .container {
   display: flex;
-  align-items: center;
 }
 
 .thumbnails {
@@ -27,5 +26,5 @@
 
 .slick-prev:before,
 .slick-next:before {
-  color: black; /* Customize the color of the arrows */
+  color: black;
 }

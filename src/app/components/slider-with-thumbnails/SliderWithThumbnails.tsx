@@ -1,6 +1,6 @@
 'use client';
 // components/SliderWithThumbnails.js
-import React, { useState } from 'react';
+import React, { SetStateAction, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -12,7 +12,7 @@ const SliderWithThumbnails = () => {
 
   const settingsMain = {
     asNavFor: nav2,
-    ref: (slider) => setNav1(slider),
+    ref: (slider: SetStateAction<null>) => setNav1(slider),
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
@@ -21,7 +21,7 @@ const SliderWithThumbnails = () => {
 
   const settingsThumbs = {
     asNavFor: nav1,
-    ref: (slider) => setNav2(slider),
+    ref: (slider: SetStateAction<null>) => setNav2(slider),
     slidesToShow: 3,
     slidesToScroll: 1,
     focusOnSelect: true,
