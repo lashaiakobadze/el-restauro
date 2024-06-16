@@ -1,12 +1,49 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  --customGray: #2b2731;
+  --customRed: #e63946;
+  --customGraySecond: #f9f9f9;
+  --customHover: #f1f1f1;
+  --customBlue: #23447c;
+}
 
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Set default background and text color */
 body {
-  font-family: 'Roboto', sans-serif;
-  padding: 20px;
+  background-color: var(--customGraySecond);
+  color: var(--customGray);
+}
+
+/* Set default link styles */
+a {
+  color: var(--customBlue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--customHover);
 }
 
 body {
-  @apply bg-gray-100 font-georgian;
+  font-family: 'Noto Sans Georgian', 'sans-serif';
+  padding: 20px;
 }

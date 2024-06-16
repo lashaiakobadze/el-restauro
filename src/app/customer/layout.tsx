@@ -3,5 +3,5 @@ export default function CustomerLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <div className="min-h-screen bg-gray-100">{children}</div>;
+  return <>{children}</>;
 }

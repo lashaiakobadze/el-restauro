@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './ActionButton.module.css';
 
 interface ActionButtonProps {
   label: string;
@@ -7,11 +8,7 @@ interface ActionButtonProps {
 
 const ActionButton: React.FC<ActionButtonProps> = ({ label, onClick }) => {
   return (
-    <button
-      className="rounded-br-[10px] rounded-tl-[10px] border border-[#FF6347] bg-[#FF6347] px-10 text-lg text-white"
-      style={{ height: '48px' }}
-      onClick={onClick}
-    >
+    <button className={styles.button} onClick={onClick}>
       {label}
     </button>
   );

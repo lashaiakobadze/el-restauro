@@ -1,0 +1,10 @@
+/* ActionButton.module.css */
+.button {
+  background-color: #ff6347; /* Tomato */
+  color: white;
+  padding: 0 2.5rem; /* 40px */
+  font-size: 1rem; /* 16px */
+  border: 1px solid #ff6347;
+  height: 48px;
+  border-radius: 0 10px 10px 0; /* Top-left and bottom-right rounded */
+}

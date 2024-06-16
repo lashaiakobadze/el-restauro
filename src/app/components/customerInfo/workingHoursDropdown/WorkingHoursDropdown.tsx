@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import styles from './WorkingHoursDropdown.module.css';
 
 const WorkingHoursDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,20 +17,14 @@ const WorkingHoursDropdown = () => {
   };
 
   return (
-    <div className="relative">
-      <span
-        className="ml-1 cursor-pointer text-blue-800"
-        onClick={() => setIsOpen(!isOpen)}
-      >
+    <div className={styles.container}>
+      <span className={styles.dropdownLabel} onClick={() => setIsOpen(!isOpen)}>
         სამუშაო დროები
       </span>
       {isOpen && (
-        <ul className="absolute z-50 mt-2 w-48 border border-gray-300 bg-gray-100">
+        <ul className={styles.dropdownMenu}>
           {Object.entries(workingHours).map(([day, hours]) => (
-            <li
-              key={day}
-              className="cursor-pointer list-none px-3 py-2 hover:bg-gray-200"
-            >
+            <li key={day} className={styles.dropdownItem}>
               {day}: {hours}
             </li>
           ))}

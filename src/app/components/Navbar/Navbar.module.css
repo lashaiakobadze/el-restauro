@@ -1,0 +1,27 @@
+/* Navbar.module.css */
+.navbar {
+  background-color: #f3f4f6; /* Light gray equivalent to bg-gray-100 */
+  padding: 1rem 2.5rem; /* 16px 40px */
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 38px;
+}
+
+.navItem {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.navLink {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.navLink:hover {
+  color: #dc2626; /* Custom red similar to hover:text-customRed */
+}

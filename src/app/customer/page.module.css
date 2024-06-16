@@ -1,0 +1,17 @@
+/* Page.module.css */
+.pageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.slider {
+  max-width: 900px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

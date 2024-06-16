@@ -1,0 +1,29 @@
+/* WorkingHoursDropdown.module.css */
+.container {
+  position: relative;
+}
+
+.dropdownLabel {
+  margin-left: 4px;
+  cursor: pointer;
+  color: #1e40af; /* blue-800 */
+}
+
+.dropdownMenu {
+  position: absolute;
+  z-index: 50;
+  margin-top: 8px;
+  width: 192px; /* 48rem */
+  border: 1px solid #d1d5db; /* gray-300 */
+  background-color: #f3f4f6; /* gray-100 */
+}
+
+.dropdownItem {
+  padding: 8px 12px;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.dropdownItem:hover {
+  background-color: #e5e7eb; /* gray-200 */
+}
