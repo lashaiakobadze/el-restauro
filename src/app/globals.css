@@ -6,3 +6,7 @@ body {
   font-family: 'Roboto', sans-serif;
   padding: 20px;
 }
+
+body {
+  @apply bg-gray-100 font-georgian;
+}
