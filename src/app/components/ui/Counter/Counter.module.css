@@ -1,0 +1,26 @@
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1.5px solid #000080;
+  border-radius: 12px;
+  padding: 3px 10px;
+}
+
+.button {
+  color: #000080;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.button:disabled {
+  color: grey;
+  cursor: not-allowed;
+}
+
+.quantity {
+  font-size: 20px;
+  color: #000080;
+  font-size: 15px;
+}

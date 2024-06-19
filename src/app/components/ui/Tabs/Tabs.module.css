@@ -4,7 +4,6 @@
   display: flex;
   justify-content: start; /* Align items to the start to keep tabs tightly packed */
   background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem; /* 8px */
   padding: 0.25rem; /* 4px */
 }
