@@ -1,30 +1,30 @@
-/* app/components/Tabs.module.css */
 .tabsContainer {
   width: max-content;
   display: flex;
-  justify-content: start; /* Align items to the start to keep tabs tightly packed */
+  justify-content: start;
   background-color: white;
-  border-radius: 0.5rem; /* 8px */
-  padding: 0.25rem; /* 4px */
+  border-radius: 8px;
+  padding: 4px;
 }
 
 .tabButton {
-  padding: 0.5rem 1.5rem; /* 8px 24px */
-  font-size: 1rem; /* 16px */
-  border-radius: 0.5rem; /* 8px */
+  padding: 8px 24px;
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 8px;
   transition:
     color 0.3s,
     background-color 0.3s;
-  white-space: nowrap; /* Prevents text from wrapping */
+  white-space: nowrap;
 }
 
 .active {
-  background-color: #ff6347; /* Tomato */
+  background-color: #ff6347;
   color: white;
 }
 
 .inactive {
-  color: #4b5563; /* Gray-600 */
+  color: #000000;
   background-color: transparent;
   cursor: pointer;
 }

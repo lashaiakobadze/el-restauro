@@ -21,7 +21,7 @@ const CategoryTabs: React.FC<TabsProps> = ({ tabs, menuItems }) => {
   );
 
   return (
-    <div>
+    <div className={styles.CategoryContainer}>
       <div className={styles.tabList}>
         {tabs.map((tab) => (
           <button
