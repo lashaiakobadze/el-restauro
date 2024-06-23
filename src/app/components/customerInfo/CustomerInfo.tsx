@@ -8,6 +8,7 @@ import {
   EnvelopeIcon,
 } from '@heroicons/react/24/outline';
 import WorkingHoursDropdown from './workingHoursDropdown/WorkingHoursDropdown';
+import ContactItem from '../ContactItem/ContactItem';
 
 const CustomerInfo = ({ customerInfo }: { customerInfo: ICustomerInfo }) => {
   const [isOpen, setIsOpen] = useState(true);
@@ -16,6 +17,7 @@ const CustomerInfo = ({ customerInfo }: { customerInfo: ICustomerInfo }) => {
     const center = { lat: customerInfo.lat, lng: customerInfo.lng };
     const initMap = () => {
       const mapOptions = { center, zoom: 10 };
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       new window.google.maps.Map(document.getElementById('map'), mapOptions);
     };
 
@@ -66,10 +68,20 @@ const CustomerInfo = ({ customerInfo }: { customerInfo: ICustomerInfo }) => {
         </ul>
       </nav>
       <div className={styles.socialMedia}>
-        {/* Uncomment and use when social icons are available */}
-        {/* <a className={styles.socialIcon}>
-          <FacebookIcon className="h-5 w-5" />
-        </a> */}
+        <ContactItem
+          icon={'/images/contacts/fb.svg'}
+          link="https://www.instagram.com"
+        />
+
+        <ContactItem
+          icon={'/images/contacts/Instagram.svg'}
+          link="https://www.instagram.com"
+        />
+
+        <ContactItem
+          icon={'/images/contacts/LinkedIn.svg'}
+          link="https://www.instagram.com"
+        />
       </div>
     </div>
   );
