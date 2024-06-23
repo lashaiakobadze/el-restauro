@@ -5,8 +5,8 @@ import CustomerInfo from '../components/customerInfo/CustomerInfo';
 import SliderWithThumbnails from '../components/slider-with-thumbnails/SliderWithThumbnails';
 
 import styles from './page.module.css';
-import Snackbar from '../components/ui/Snackbar/Snackbar';
 import CustomerDetails from '../components/CustomerDetails/CustomerDetails';
+import Orders from '../components/Orders/Orders';
 
 const customerInfo: ICustomerInfo = {
   lat: 41.7151,
@@ -24,27 +24,25 @@ const customerInfo: ICustomerInfo = {
   ],
 };
 
-const setShowSnackbar = (show: boolean) => {
-  console.log(`Snackbar is now: ${show}`);
-};
-
 const Page = () => {
   return (
     <>
       <div className={styles.pageContainer}>
         <div className={styles.slider}>
-          <Snackbar
-            message="შენახვა მაღლავს!"
-            show={true} // Fix: Change show prop to showSnackbar
-            onClose={() => setShowSnackbar(false)}
-          />
           <SliderWithThumbnails />
         </div>
         <div className={styles.info}>
           <CustomerInfo customerInfo={customerInfo} />
         </div>
       </div>
-      <CustomerDetails />
+      <div className={styles.divider}>
+        <div className={styles.customerDetails}>
+          <CustomerDetails />
+        </div>
+        <div className={styles.orders}>
+          <Orders />
+        </div>
+      </div>
     </>
   );
 };

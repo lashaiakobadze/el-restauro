@@ -1,0 +1,34 @@
+.paymentItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.paymentType {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.paymentItemTitle {
+  text-wrap: nowrap;
+  font-family: Noto Sans Georgian;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 17.68px;
+  text-align: center;
+  color: #2b2731;
+}
+
+.paymentItemValue {
+  text-wrap: nowrap;
+  font-family: Noto Sans Georgian;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.04px;
+  text-align: center;
+  color: #188038;
+}

@@ -4,14 +4,32 @@
   align-items: center;
   justify-content: space-evenly;
   gap: 20px;
+  padding-bottom: 40px;
 }
 
 .slider {
   max-width: 900px;
+  padding-top: 15px;
 }
 
 .info {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-top: 40px;
+}
+
+.divider {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+}
+
+.customerDetails {
+  grid-column: 1 / 2;
+}
+
+.orders {
+  grid-column: 2 / 3;
+  align-self: start;
 }

@@ -23,7 +23,7 @@ import styles from './${componentName}.module.css';
 interface ${componentName}Props {
 }
 
-const ${componentName}: React.FC = ({}: ${componentName}Props) => {
+const ${componentName}: React.FC<${componentName}Props> = ({}) => {
   return (
     <div className={styles.container}>
       <h1>${componentName}</h1>

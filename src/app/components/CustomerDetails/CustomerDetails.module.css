@@ -1,6 +1,5 @@
 .customerDetailsContainer {
   max-width: 900px;
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
   gap: 5px;

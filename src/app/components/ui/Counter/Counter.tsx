@@ -6,20 +6,26 @@ type CounterProps = {
   onIncrement: () => void;
   onDecrement: () => void;
   width?: string;
+  hasBorder?: boolean;
 };
 
 const Counter: React.FC<CounterProps> = ({
   quantity,
   onIncrement,
   onDecrement,
-  width = '100px',
+  hasBorder = true,
+  width = '70px',
 }) => {
   const isActive = quantity > 0;
 
   return (
     <div
       className={styles.counter}
-      style={{ width, borderColor: !isActive ? 'grey' : '#000080' }}
+      style={{
+        width,
+        borderColor: !isActive ? 'grey' : '#000080',
+        borderStyle: hasBorder ? 'solid' : 'none',
+      }}
     >
       <button
         onClick={onDecrement}

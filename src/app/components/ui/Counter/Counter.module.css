@@ -20,7 +20,10 @@
 }
 
 .quantity {
-  font-size: 20px;
   color: #000080;
-  font-size: 15px;
+  font-family: Noto Sans Georgian;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16.32px;
+  text-align: center;
 }

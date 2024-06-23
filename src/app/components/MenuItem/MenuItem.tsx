@@ -28,7 +28,6 @@ const MenuItem: React.FC<MenuItemProps> = ({ imageSrc, title, price }) => {
           quantity={quantity}
           onIncrement={handleIncrement}
           onDecrement={handleDecrement}
-          width="70px"
         />
       </div>
     </div>

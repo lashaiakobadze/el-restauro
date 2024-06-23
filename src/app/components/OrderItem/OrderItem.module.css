@@ -1,0 +1,48 @@
+.orderItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.orderItemTitle {
+  font-family: Noto Sans Georgian;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.014em;
+  text-align: left;
+  color: #252c32;
+  text-wrap: nowrap;
+}
+
+.orderItemPricing {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 36px;
+}
+
+.orderItemPrice {
+  text-wrap: nowrap;
+  display: flex;
+  justify-content: space-between;
+  font-family: Noto Sans Georgian;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.014em;
+  text-align: left;
+  color: #87898e;
+}
+
+.orderItemTotal {
+  text-wrap: nowrap;
+  font-family: Noto Sans Georgian;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #ff6347;
+}
