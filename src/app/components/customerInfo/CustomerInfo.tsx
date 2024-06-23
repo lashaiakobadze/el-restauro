@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import styles from './CustomerInfo.module.css';
 import { ICustomerInfo } from './ICustomerInfo';
@@ -8,7 +7,7 @@ import {
   EnvelopeIcon,
 } from '@heroicons/react/24/outline';
 import WorkingHoursDropdown from './workingHoursDropdown/WorkingHoursDropdown';
-import ContactItem from '../ContactItem/ContactItem';
+import ContactItem from '../ui/ContactItem/ContactItem';
 
 const CustomerInfo = ({ customerInfo }: { customerInfo: ICustomerInfo }) => {
   const [isOpen, setIsOpen] = useState(true);

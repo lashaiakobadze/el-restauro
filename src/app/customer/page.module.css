@@ -1,7 +1,10 @@
-/* Page.module.css */
+.breadcrumb {
+  padding-top: 34px;
+  padding-bottom: 12px;
+}
+
 .pageContainer {
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
   gap: 20px;
   padding-bottom: 40px;
@@ -9,14 +12,12 @@
 
 .slider {
   max-width: 900px;
-  padding-top: 15px;
 }
 
 .info {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-top: 40px;
 }
 
 .divider {

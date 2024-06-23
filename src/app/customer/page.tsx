@@ -7,6 +7,7 @@ import SliderWithThumbnails from '../components/slider-with-thumbnails/SliderWit
 import styles from './page.module.css';
 import CustomerDetails from '../components/CustomerDetails/CustomerDetails';
 import Orders from '../components/Orders/Orders';
+import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
 
 const customerInfo: ICustomerInfo = {
   lat: 41.7151,
@@ -27,6 +28,9 @@ const customerInfo: ICustomerInfo = {
 const Page = () => {
   return (
     <>
+      <div className={styles.breadcrumb}>
+        <Breadcrumb />
+      </div>
       <div className={styles.pageContainer}>
         <div className={styles.slider}>
           <SliderWithThumbnails />

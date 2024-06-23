@@ -1,0 +1,34 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.breadcrumbList {
+  display: flex;
+  list-style: none;
+}
+
+.breadcrumbItem {
+  color: #989b9e;
+}
+
+.breadcrumbItem:not(:last-child)::after {
+  content: '>';
+  margin: 0 8px;
+}
+
+.breadcrumbItem a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.breadcrumbItem a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  color: #000000;
+  font-weight: 600;
+}
