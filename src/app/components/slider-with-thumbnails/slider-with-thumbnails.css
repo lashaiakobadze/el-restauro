@@ -1,0 +1,8 @@
+.slider-with-thumbnails
+  .slick-list
+  .slick-track
+  .slick-slide:not(.slick-current)
+  img {
+  border-radius: 0px 10px 0px 10px;
+  opacity: 0.88;
+}

@@ -1,4 +1,3 @@
-/* components/SliderWithThumbnails.module.css */
 .container {
   display: flex;
 }
@@ -11,7 +10,7 @@
 .thumbnail img {
   width: 100%;
   cursor: pointer;
-  padding: 5px;
+  padding: 5px 0;
   box-sizing: border-box;
 }
 

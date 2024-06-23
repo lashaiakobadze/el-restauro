@@ -5,6 +5,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styles from './SliderWithThumbnails.module.css';
+import './slider-with-thumbnails.css';
 
 const SliderWithThumbnails = () => {
   const [nav1, setNav1] = useState(null);
@@ -31,14 +32,14 @@ const SliderWithThumbnails = () => {
   };
 
   const images = [
-    '/images/slide1.jpg',
+    '/images/restaurant.png',
     '/images/slide2.jpg',
     '/images/slide3.jpg',
     '/images/slide4.jpg',
   ];
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} slider-with-thumbnails`}>
       <div className={styles.thumbnails}>
         <Slider {...settingsThumbs}>
           {images.map((img, index) => (
