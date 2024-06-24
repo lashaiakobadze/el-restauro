@@ -1,0 +1,32 @@
+.food-card {
+  width: 206px;
+  height: 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  gap: 16px;
+  border-radius: 10px;
+  border: solid 1px #e5e5e5;
+}
+.food-card img {
+  width: 60px;
+  height: 60px;
+}
+.food-card p {
+  font-size: 13px;
+  color: #0e0f1d;
+}
+
+@media (max-width: 500px) {
+  .food-card {
+    width: 104px;
+    height: 80px;
+    gap: 6px;
+  }
+  .food-card img {
+    width: 40px;
+    height: 40px;
+  }
+}
