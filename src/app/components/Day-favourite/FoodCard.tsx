@@ -38,7 +38,7 @@ export default function FoodCard(props: IFoodResto) {
     <div className={`${styles['food-card']} food-card`}>
       <Swiper
         spaceBetween={1}
-        // loop={true}
+        loop={true}
         slidesPerView={1}
         modules={[Navigation, Pagination]}
         pagination={{ clickable: true }}
