@@ -6,6 +6,7 @@ import Image from 'next/image';
 
 import styles from './day-fav.module.css';
 import './food-card.css';
+import { FavoriteEnum } from '@/app/common/enums/favorite.enum';
 
 import 'swiper/css'; // Import Swiper styles
 import 'swiper/css/navigation';
@@ -16,6 +17,7 @@ export interface IFoodResto {
   name: string;
   address: string;
   price: string;
+  favorite: FavoriteEnum;
 }
 
 // const data = [
@@ -33,7 +35,8 @@ export interface IFoodResto {
 // ];
 
 export default function FoodCard(props: IFoodResto) {
-  const { images, name, address, price } = props;
+  const { images, name, address, price, favorite } = props;
+
   return (
     <div className={`${styles['food-card']} food-card`}>
       <Swiper
@@ -46,6 +49,16 @@ export default function FoodCard(props: IFoodResto) {
       >
         {images.map((el, index) => (
           <SwiperSlide key={index}>
+            <div className={styles['fc-favoritte']}>
+              <img
+                src={
+                  favorite === FavoriteEnum.NORMAL
+                    ? '/images/heart-fill.svg'
+                    : '/images/heart.svg'
+                }
+                alt="favorite"
+              />
+            </div>
             <Image
               src={el.name}
               alt={el.name}

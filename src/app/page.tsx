@@ -5,6 +5,7 @@ import CountryCard from './components/CountryCard/CountryCard';
 import FoodCard from './components/Day-favourite/FoodCard';
 import Resto from './components/Resto/Resto';
 import OfferedCard from './components/OfferedCard/OfferedCard';
+import { FavoriteEnum } from '@/app/common/enums/favorite.enum';
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         name={'ბურგერ ბარი'}
         address={'ვაჯა-ფშაველას 32'}
         price={'60 ლ'}
+        favorite={FavoriteEnum.NORMAL}
       />
       <Resto name={'test'} image={'/images/resto-imgs/respublic.png'} />
       <OfferedCard
