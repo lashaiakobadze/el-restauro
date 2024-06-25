@@ -1,0 +1,43 @@
+.box {
+  position: relative;
+  width: 654px;
+}
+.mainBg {
+  border-radius: 30px;
+}
+.bgImg {
+  position: absolute;
+  top: 35px;
+  right: 0;
+}
+.price {
+  position: absolute;
+  top: 25px;
+  left: 40px;
+}
+.box h2 {
+  position: absolute;
+  top: 190px;
+  left: 40px;
+
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 0.77;
+  color: #292e36;
+}
+.box p {
+  position: absolute;
+  width: 260px;
+  top: 230px;
+  left: 40px;
+
+  font-size: 16px;
+  line-height: 1.26;
+  color: #555;
+}
+
+@media (max-width: 1350px) {
+  .ads-container {
+    flex-direction: column;
+  }
+}

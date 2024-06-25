@@ -1,0 +1,34 @@
+.country-card {
+  max-width: 190px;
+  height: 245px;
+  background-color: #fff;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.country-card p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 13px;
+  color: #292e36;
+}
+
+@media (max-width: 500px) {
+  .country-card {
+    max-width: 88px;
+    height: 111px;
+    gap: 10px;
+  }
+  .country-card img {
+    width: 60px;
+    height: 60px;
+  }
+  .country-card p {
+    font-size: 12px;
+    line-height: 0.77;
+  }
+}
