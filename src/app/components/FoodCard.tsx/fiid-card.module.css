@@ -2,16 +2,42 @@
   max-width: 320px;
   border-radius: 10px;
   background: #fff;
+  overflow: hidden;
+}
+.imageContainer {
+  position: relative;
+  width: 100%;
+  max-height: 240px;
+}
+.heartIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.heart {
+  margin-top: 60px;
 }
 .fc-img {
   width: 100%;
   max-height: 240px;
+  border-radius: 10px 10px 0 0;
   height: auto;
   background-size: cover !important;
   background-position: center !important;
 }
 .fc-info {
   padding: 15px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .fc-title {
   font-size: 18px;
@@ -20,7 +46,6 @@
   color: #252c32;
 }
 .fc-info p {
-  margin: 10px 0;
   font-size: 14px;
   line-height: 1.71;
   opacity: 0.75;
@@ -49,10 +74,11 @@
     letter-spacing: -0.07px;
   }
   .fc-info {
-    padding: 10px 18px; /*test*/
+    padding: 0 24px;
+    gap: 2px;
   }
   .fc-info p {
-    display: none;
+    font-size: 12px;
   }
   .fc-prize {
     font-weight: 600;
@@ -62,25 +88,3 @@
   }
 }
 /* ///////////// */
-/* .swiper-button-prev,
-.swiper-button-next {
-  transition: all 0.1s ease-in-out;
-  width: 40px;
-  height: 40px;
-  background: #fff;
-  border-radius: 50%;
-  font-size: 5px;
-}
-.swiper-button-prev::after {
-  font-size: 15px;
-  color: #000;
-  font-weight: bold;
-}
-.swiper-button-next::after {
-  font-size: 15px;
-  color: #000;
-  font-weight: bold;
-}
-.food-card:hover .swiper-button-next {
-  right: 10px;
-} */
