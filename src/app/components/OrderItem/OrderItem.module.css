@@ -1,11 +1,12 @@
 .orderItem {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
 }
 
 .orderItemTitle {
+  width: 40%;
   font-family: Noto Sans Georgian;
   font-size: 12px;
   font-weight: 600;
@@ -14,17 +15,19 @@
   text-align: left;
   color: #252c32;
   text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .orderItemPricing {
-  width: 100%;
+  width: 55%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 36px;
 }
 
 .orderItemPrice {
+  width: 33%;
   text-wrap: nowrap;
   display: flex;
   justify-content: space-between;
@@ -37,12 +40,17 @@
   color: #87898e;
 }
 
+.orderItemQuantity {
+  width: 33%;
+}
+
 .orderItemTotal {
+  width: 33%;
   text-wrap: nowrap;
   font-family: Noto Sans Georgian;
   font-size: 12px;
   font-weight: 500;
   line-height: 24px;
-  text-align: left;
+  text-align: right;
   color: #ff6347;
 }
