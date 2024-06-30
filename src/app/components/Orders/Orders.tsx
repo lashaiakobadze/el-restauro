@@ -16,8 +16,11 @@ const Orders: React.FC<OrdersProps> = () => {
   }>({});
 
   const handleQuantityChange = (title: string, quantity: number) => {
-    setOrderQuantities((prev) => ({ ...prev, [title]: quantity }));
-    console.log('orderQuantities', orderQuantities);
+    setOrderQuantities((prev) => {
+      const newOrderQuantities = { ...prev, [title]: quantity };
+      console.log('newOrderQuantities', newOrderQuantities), orderQuantities;
+      return newOrderQuantities;
+    });
   };
 
   const handleClick = () => {

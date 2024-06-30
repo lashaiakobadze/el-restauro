@@ -36,8 +36,8 @@ const OrderItem: React.FC<OrderItemProps> = ({
         <span className={styles.orderItemQuantity}>
           <Counter
             quantity={quantity}
-            onIncrement={handleIncrement}
-            onDecrement={handleDecrement}
+            onIncrement={() => handleIncrement()}
+            onDecrement={() => handleDecrement()}
             hasBorder={false}
           />
         </span>
