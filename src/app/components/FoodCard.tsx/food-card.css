@@ -6,9 +6,9 @@
 
 .food-card .swiper-button-prev,
 .food-card .swiper-button-next {
-  transition: all 0.1s ease-in-out !important;
-  width: 40px !important;
-  height: 40px !important;
+  transition: all 0.1s ease-in-out;
+  width: 40px;
+  height: 40px;
   background: #fff;
   border-radius: 50%;
 }
@@ -16,14 +16,14 @@
 .food-card .swiper-button-prev::after {
   margin-right: 2px !important;
   font-size: 15px !important;
-  color: #000;
+  color: #000000a8;
   font-weight: bold;
 }
 
 .food-card .swiper-button-next::after {
   margin-left: 2px !important;
   font-size: 15px !important;
-  color: #000;
+  color: #000000a8;
   font-weight: bold;
 }
 
@@ -36,11 +36,11 @@
 }
 
 .food-card:hover .swiper-button-next {
-  right: 10px !important;
+  right: 5px !important;
 }
 
 .food-card:hover .swiper-button-prev {
-  left: 10px !important;
+  left: 5px !important;
 }
 
 .food-card .swiper-pagination-bullet {
@@ -55,6 +55,7 @@
 @media (max-width: 500px) {
   .food-card .swiper-button-prev,
   .food-card .swiper-button-next {
+    transform: translateY(50%);
     width: 25px !important;
     height: 25px !important;
   }
@@ -63,5 +64,12 @@
   }
   .food-card .swiper-button-next::after {
     font-size: 8px !important;
+  }
+  .food-card:hover .swiper-button-next {
+    right: 2px !important;
+  }
+
+  .food-card:hover .swiper-button-prev {
+    left: 2px !important;
   }
 }
