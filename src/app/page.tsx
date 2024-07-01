@@ -8,6 +8,8 @@ import Resto from './components/Resto/Resto';
 import OfferedCard from './components/OfferedCard/OfferedCard';
 import { FavoriteEnum } from './common/enums/favorite.enum';
 import { SetStateAction, useState } from 'react';
+import RoundedTabSecondary from './components/ui/RoundedTabSecondary/RoundedTabSecondary';
+import RoundedTabPrimary from './components/ui/RoundedTabPrimary/RoundedTabPrimary';
 
 export default function Home() {
   const [favoriteState, setFavoriteState] = useState(FavoriteEnum.UNFAVORITE);
@@ -15,8 +17,26 @@ export default function Home() {
   const handleFavoriteChange = (newFavorite: SetStateAction<FavoriteEnum>) => {
     setFavoriteState(newFavorite);
   };
+
+  const tabsContainer = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '10px',
+    padding: '20px',
+  };
+
   return (
     <>
+      <div style={tabsContainer}>
+        <RoundedTabPrimary name={'უკრაინული'} isActive={false} />
+        <RoundedTabPrimary name={'უკრაინული'} isActive={true} />
+
+        <RoundedTabSecondary name={'რესტორანი'} isActive={false} />
+        <RoundedTabSecondary name={'რესტორანი'} isActive={true} />
+      </div>
+      {/* isActive={true} */}
+
       {/* <SliderCenterMode />
       <SliderWithThumbnails />
       <ImageSlider /> */}
