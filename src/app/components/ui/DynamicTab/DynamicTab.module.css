@@ -1,0 +1,27 @@
+.dynamicTab {
+  width: max-content;
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;
+  border: 1px solid #c4cfda;
+  border-radius: 40px;
+  background-color: transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  user-select: none;
+  font-family: Noto Sans Georgian;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.006em;
+  text-align: left;
+  color: #252c32;
+}
+
+.active,
+.dynamicTab:hover,
+.dynamicTab:focus {
+  border-color: #ff6347;
+}

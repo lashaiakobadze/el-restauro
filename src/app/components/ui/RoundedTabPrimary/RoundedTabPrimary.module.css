@@ -11,9 +11,13 @@
   line-height: 23.97px;
   text-align: center;
   color: #3e4958;
+  background: transparent;
+  cursor: pointer;
 }
 
-.active {
+.active,
+.tab:hover,
+.tab:focus {
   background: rgba(255, 99, 71, 1);
   color: #ffffff;
 }

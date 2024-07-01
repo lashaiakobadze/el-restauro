@@ -10,6 +10,8 @@ import { FavoriteEnum } from './common/enums/favorite.enum';
 import { SetStateAction, useState } from 'react';
 import RoundedTabSecondary from './components/ui/RoundedTabSecondary/RoundedTabSecondary';
 import RoundedTabPrimary from './components/ui/RoundedTabPrimary/RoundedTabPrimary';
+import RoundedTabDark from './components/ui/RoundedTabDark/RoundedTabDark';
+import DynamicTab from './components/ui/DynamicTab/DynamicTab';
 
 export default function Home() {
   const [favoriteState, setFavoriteState] = useState(FavoriteEnum.UNFAVORITE);
@@ -26,6 +28,13 @@ export default function Home() {
     padding: '20px',
   };
 
+  const dynamicTabContent = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '10px',
+  };
+
   return (
     <>
       <div style={tabsContainer}>
@@ -34,8 +43,26 @@ export default function Home() {
 
         <RoundedTabSecondary name={'რესტორანი'} isActive={false} />
         <RoundedTabSecondary name={'რესტორანი'} isActive={true} />
+
+        <RoundedTabDark content={'სახლი'} isActive={false} />
+        <RoundedTabDark content={'სახლი'} isActive={true} />
+
+        <DynamicTab isActive={false}>
+          <div style={dynamicTabContent}>
+            <span style={{ color: '#787878' }}>Sort by option</span>{' '}
+            <span style={{ fontWeight: 900 }}>ქალაქი</span>
+            <img src="/icons/Vector.svg" alt="Vector svg" />
+          </div>
+        </DynamicTab>
+
+        <DynamicTab isActive={true}>
+          <div style={dynamicTabContent}>
+            <span style={{ color: '#787878' }}>Sort by option</span>{' '}
+            <span style={{ fontWeight: 900 }}>ქალაქი</span>
+            <img src="/icons/Vector.svg" alt="Vector svg" />
+          </div>
+        </DynamicTab>
       </div>
-      {/* isActive={true} */}
 
       {/* <SliderCenterMode />
       <SliderWithThumbnails />
