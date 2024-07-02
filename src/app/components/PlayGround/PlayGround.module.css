@@ -12,6 +12,8 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 5px dashed #cdd2de;
 }
 
 .dynamicTabContent {
