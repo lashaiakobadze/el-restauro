@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.container p {
+  font-size: 12px;
+  line-height: 1.33;
+  color: #989b9e;
+}
+@media (max-width: 500px) {
+  .container {
+    gap: 4px;
+  }
+  .stars {
+    gap: 1.5px;
+  }
+  .container p {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+}
