@@ -8,6 +8,7 @@ import Resto from './components/Resto/Resto';
 import OfferedCard from './components/OfferedCard/OfferedCard';
 import { FavoriteEnum } from './common/enums/favorite.enum';
 import { SetStateAction, useState } from 'react';
+import PlayGround from './components/PlayGround/PlayGround';
 
 export default function Home() {
   const [favoriteState, setFavoriteState] = useState(FavoriteEnum.UNFAVORITE);
@@ -15,8 +16,11 @@ export default function Home() {
   const handleFavoriteChange = (newFavorite: SetStateAction<FavoriteEnum>) => {
     setFavoriteState(newFavorite);
   };
+
   return (
     <>
+      <PlayGround />
+
       {/* <SliderCenterMode />
       <SliderWithThumbnails />
       <ImageSlider /> */}

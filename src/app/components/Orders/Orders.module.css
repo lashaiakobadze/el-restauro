@@ -1,5 +1,6 @@
 .container {
-  max-width: 450px;
+  width: 450px;
+  min-width: 325px;
   padding: 12px 24px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -37,6 +38,7 @@
 }
 
 .orderItems {
+  width: 100%;
   border-top: 1px solid #92989f38;
   border-bottom: 1px dashed #92989f38;
   padding: 18px 0;

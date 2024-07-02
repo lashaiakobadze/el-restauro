@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './Counter.module.css';
 
 type CounterProps = {
@@ -33,7 +34,12 @@ const Counter: React.FC<CounterProps> = ({
         style={{ color: !isActive ? 'grey' : '#000080' }}
         disabled={!isActive}
       >
-        -
+        <Image
+          src={`icons/minus${!isActive ? '-grey' : ''}.svg`}
+          alt="icon"
+          width={12}
+          height={12}
+        />
       </button>
       <span
         className={styles.quantity}
@@ -46,7 +52,12 @@ const Counter: React.FC<CounterProps> = ({
         className={`${styles.button}`}
         style={{ color: !isActive ? 'grey' : '#000080' }}
       >
-        +
+        <Image
+          src={`icons/plus${!isActive ? '-grey' : ''}.svg`}
+          alt="icon"
+          width={12}
+          height={12}
+        />
       </button>
     </div>
   );
