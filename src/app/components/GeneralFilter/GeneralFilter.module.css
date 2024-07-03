@@ -1,0 +1,81 @@
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--main-bg-color, #ff6347);
+  flex: 1;
+  padding: 8px 16px;
+  background: #fefaff;
+  border-radius: 8px;
+}
+
+.find {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  color: #737579;
+  border-right: 1px solid #ff634733;
+  font-weight: 100;
+  font-family: TBC Contractica;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: left;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333333;
+  padding: 4px 20px;
+  border-right: 1px solid #ff634733;
+  font-weight: 100;
+  font-family: TBC Contractica;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.category {
+}
+
+.location {
+}
+
+.category img {
+  margin-left: 10px;
+}
+
+.location img {
+  margin-left: 10px;
+}
+
+.find input {
+  width: 100%;
+  border: none;
+  padding: 4px 20px;
+  padding-left: 8px;
+  background: transparent;
+  outline: none;
+}
+
+.findIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: var(--main-bg-color, #ff6347);
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.findIcon img {
+  filter: invert(1);
+}
+
+.findIcon:hover {
+  cursor: pointer;
+  background: var(--main-bg-color-hover, #ff5031);
+}

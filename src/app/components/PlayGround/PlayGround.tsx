@@ -18,6 +18,9 @@ import CustomerInfo from '../customerInfo/CustomerInfo';
 import { ICustomerInfo } from '../customerInfo/ICustomerInfo';
 import Breadcrumb from '../Breadcrumb/Breadcrumb';
 import SuggestTab from '../SuggestTab/SuggestTab';
+import MapBtn from '../MapBtn/MapBtn';
+import GeneralFilter from '../GeneralFilter/GeneralFilter';
+import GeneralActionsItem from '../GeneralActionsItem/GeneralActionsItem';
 
 interface PlayGroundProps {}
 
@@ -119,6 +122,8 @@ const PlayGround: React.FC<PlayGroundProps> = () => {
           color="#23447C"
           onClick={() => console.log('click!')}
         />
+
+        <MapBtn />
       </div>
 
       <h2>UI elements</h2>
@@ -150,6 +155,10 @@ const PlayGround: React.FC<PlayGroundProps> = () => {
           onDecrement={() => handleDecrement()}
           hasBorder={false}
         />
+
+        <GeneralFilter />
+
+        <GeneralActionsItem text={'შენახული'} icon={'saved'} />
       </div>
 
       <h2>Custom components</h2>

@@ -1,0 +1,21 @@
+.actionItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2px;
+  cursor: pointer;
+}
+
+.actionItem:hover .actionItemText {
+  color: #ff6347;
+}
+
+.actionItemText {
+  font-family: Noto Sans Georgian;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 17.68px;
+  text-align: center;
+  color: #2b2731a6;
+}

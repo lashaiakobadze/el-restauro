@@ -1,0 +1,84 @@
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.useActions {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  padding: 0 20px;
+}
+
+.useActionsAuth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.useActionsAuth:hover {
+  border: 1px solid #ff6347;
+  background-color: #ff6347;
+  color: #fff;
+}
+
+.useActionsAuthImg {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  transition: opacity 0.3s ease;
+}
+
+.useActionsAuthImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.useActionsAuthImg img:last-child {
+  opacity: 0;
+}
+
+.useActionsAuth:hover .useActionsAuthImg img:first-child {
+  opacity: 0;
+}
+
+.useActionsAuth:hover .useActionsAuthImg img:last-child {
+  opacity: 1;
+}
+
+.useActionsAuthTxt {
+  font-family: 'Noto Sans Georgian';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.04px;
+  text-align: left;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.lang .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.lang .item:hover {
+  color: #ff6347;
+}
+
+.lang img {
+  margin-left: 10px;
+}

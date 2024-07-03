@@ -4,6 +4,9 @@
   --customGraySecond: #f9f9f9;
   --customHover: #f1f1f1;
   --customBlue: #23447c;
+  --main-bg-color: #ff6347;
+  --main-bg-color-hover: #ff5031;
+  --slider-bullets-color: #fc8019;
 }
 
 /* Reset default margin and padding */
@@ -45,5 +48,5 @@ a:hover {
 
 body {
   font-family: 'Noto Sans Georgian', 'sans-serif';
-  padding: 20px;
+  /* padding: 20px; */
 }

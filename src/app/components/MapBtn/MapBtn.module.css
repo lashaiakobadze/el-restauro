@@ -1,0 +1,18 @@
+.map {
+  display: flex;
+  align-items: center;
+  background: var(--main-bg-color, #ff6347);
+  border-radius: 9.3px;
+  color: #fff;
+  padding: 13px 21px;
+  border: none;
+}
+
+.map img {
+  margin-right: 10px;
+}
+
+.map:hover {
+  cursor: pointer;
+  background: var(--main-bg-color-hover, #ff5031);
+}
