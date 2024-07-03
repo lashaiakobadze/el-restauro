@@ -18,6 +18,11 @@
   white-space: nowrap;
 }
 
+.tabButton:hover {
+  background-color: #ff6347;
+  color: white;
+}
+
 .active {
   background-color: #ff6347;
   color: white;

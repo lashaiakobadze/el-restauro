@@ -17,6 +17,7 @@ import CustomerDetails from '../CustomerDetails/CustomerDetails';
 import CustomerInfo from '../customerInfo/CustomerInfo';
 import { ICustomerInfo } from '../customerInfo/ICustomerInfo';
 import Breadcrumb from '../Breadcrumb/Breadcrumb';
+import SuggestTab from '../SuggestTab/SuggestTab';
 
 interface PlayGroundProps {}
 
@@ -100,6 +101,12 @@ const PlayGround: React.FC<PlayGroundProps> = () => {
           tabs={mainTabs}
           defaultActiveId={activeTab}
           onTabClick={handleTabClick}
+        />
+
+        <SuggestTab
+          title="დღის შეთავაზება"
+          description="დარჩენილია 2 დღე"
+          timeLeft="10:23:10"
         />
       </div>
 

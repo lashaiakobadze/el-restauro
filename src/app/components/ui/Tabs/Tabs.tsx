@@ -1,4 +1,4 @@
-// app/components/Tabs.tsx
+'use client';
 import React, { useState } from 'react';
 import styles from './Tabs.module.css';
 import { Tab } from '@/app/types/tab.interface';
