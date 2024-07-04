@@ -40,7 +40,8 @@
 .category {
 }
 
-.location {
+.location .item {
+  border: none;
 }
 
 .category img {

@@ -20,3 +20,8 @@
   opacity: var(--border-opacity, 0.06);
   pointer-events: none; /* Ensure the pseudo-element doesn't interfere with clicks */
 }
+
+.contactItem:hover::after {
+  border: 1.5px solid var(--main-bg-color-hover);
+  opacity: 1;
+}

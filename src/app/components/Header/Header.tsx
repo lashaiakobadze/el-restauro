@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Header.module.css';
 import MapBtn from '../MapBtn/MapBtn';
@@ -18,9 +19,11 @@ const Header: React.FC<HeaderProps> = ({ props }) => {
         <div className={styles.maxWidth}>
           <div className={styles.header}>
             <Link href={'/'} passHref>
-              <img
+              <Image
                 className={styles.logo}
-                src={'icons/black-logo.svg'}
+                height={96}
+                width={48}
+                src={'logo.svg'}
                 alt="logo"
               />
             </Link>
