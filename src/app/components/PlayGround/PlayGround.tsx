@@ -21,6 +21,8 @@ import SuggestTab from '../SuggestTab/SuggestTab';
 import MapBtn from '../MapBtn/MapBtn';
 import GeneralFilter from '../GeneralFilter/GeneralFilter';
 import GeneralActionsItem from '../GeneralActionsItem/GeneralActionsItem';
+import DailyDiscountItem from '../DailyDiscountItem/DailyDiscountItem';
+import DailyDiscountBanner from '../DailyDiscountBanner/DailyDiscountBanner';
 
 interface PlayGroundProps {}
 
@@ -159,6 +161,16 @@ const PlayGround: React.FC<PlayGroundProps> = () => {
         <GeneralFilter />
 
         <GeneralActionsItem text={'შენახული'} icon={'saved'} />
+
+        <DailyDiscountBanner
+          bannerBackground="/images/daily-discount/ბანერი.png"
+          bannerDescription="დღის ფასდაკლება"
+        />
+
+        <DailyDiscountItem
+          imgUrl="/images/daily-discount/სენდვიჩი.png"
+          title="სენდვიჩი"
+        />
       </div>
 
       <h2>Custom components</h2>

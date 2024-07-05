@@ -1,0 +1,32 @@
+.dailyDiscountBanner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 358px;
+  height: 542px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.dailyDiscountBannerImg {
+  width: 100%;
+  height: auto;
+}
+
+.dailyDiscountBannerItem {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.33);
+  padding: 16px;
+  border-radius: 34px;
+  opacity: 1;
+  font-family: TBC Contractica;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  text-align: center;
+  color: #fff;
+}
