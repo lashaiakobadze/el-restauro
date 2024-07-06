@@ -30,3 +30,7 @@
   text-align: center;
   color: #fff;
 }
+
+.dailyDiscountBanner:hover .dailyDiscountBannerItem {
+  color: var(--main-bg-color);
+}

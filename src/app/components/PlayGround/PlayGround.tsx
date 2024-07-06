@@ -23,6 +23,7 @@ import GeneralFilter from '../GeneralFilter/GeneralFilter';
 import GeneralActionsItem from '../GeneralActionsItem/GeneralActionsItem';
 import DailyDiscountItem from '../DailyDiscountItem/DailyDiscountItem';
 import DailyDiscountBanner from '../DailyDiscountBanner/DailyDiscountBanner';
+import VoucherOrder from '../VoucherOrder/VoucherOrder';
 
 interface PlayGroundProps {}
 
@@ -179,6 +180,8 @@ const PlayGround: React.FC<PlayGroundProps> = () => {
           <CustomerDetails />
         </div>
         <Orders />
+
+        <VoucherOrder />
 
         <CustomerInfo customerInfo={customerInfo} />
       </div>

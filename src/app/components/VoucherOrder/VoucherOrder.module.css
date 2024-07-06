@@ -1,0 +1,47 @@
+.container {
+  width: 450px;
+  min-width: 325px;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.payment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 24px 0;
+  gap: 15px;
+}
+
+.ordering {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+/* ToDo: remove important-s(it's too bad practice and make new Counter with this conditions instead of override css */
+.newCounterStyle {
+  border-radius: 10px !important;
+  padding: 14px 26px !important;
+}
+.newCounterStyle span {
+  font-size: 14px !important;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 18px;
+}

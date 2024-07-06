@@ -1,0 +1,84 @@
+.voucherOrderDetails {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: Noto Sans Georgian;
+}
+
+.voucherOrderDetailsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+
+.voucherOrderDetailsTitle {
+  color: #333333;
+}
+
+.voucherOrderDetailsDesc {
+  color: #333333c7;
+}
+
+.voucherOrderDetailsCompare {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.voucherOrderDetailsComparePayment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.voucherOrderDetailsCurrent {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #188038;
+}
+
+.voucherOrderDetailsReal {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-decoration: line-through;
+  color: #333333b2;
+}
+
+.voucherOrderDetailsSaved {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  gap: 16px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.02);
+  box-shadow: 0px 1px 9px 0px #00000003;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.voucherOrderDetailsSaved span {
+  color: #808080;
+}
+
+.voucherOrderDetailsSaved strong {
+  color: #333333;
+}

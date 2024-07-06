@@ -8,6 +8,7 @@ type CounterProps = {
   onDecrement: () => void;
   width?: string;
   hasBorder?: boolean;
+  className?: string;
 };
 
 const Counter: React.FC<CounterProps> = ({
@@ -16,12 +17,13 @@ const Counter: React.FC<CounterProps> = ({
   onDecrement,
   hasBorder = true,
   width = '70px',
+  className,
 }) => {
   const isActive = quantity > 0;
 
   return (
     <div
-      className={styles.counter}
+      className={className ? `${className} ${styles.counter}` : styles.counter}
       style={{
         width,
         borderColor: !isActive ? 'grey' : '#000080',

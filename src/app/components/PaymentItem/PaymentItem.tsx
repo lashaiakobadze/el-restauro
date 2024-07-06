@@ -9,6 +9,7 @@ interface PaymentItemProps {
   paymentType: PaymentTypeEnum;
   paymentItemTitle: string;
   paymentItemValue: number;
+  color?: string;
   onClick: () => void;
 }
 
@@ -16,6 +17,7 @@ const PaymentItem: React.FC<PaymentItemProps> = ({
   paymentItemTitle,
   paymentItemValue,
   isActive,
+  color,
   onClick,
 }) => {
   return (
@@ -25,7 +27,12 @@ const PaymentItem: React.FC<PaymentItemProps> = ({
         <span className={styles.paymentItemTitle}>{paymentItemTitle}</span>
       </div>
 
-      <span className={styles.paymentItemValue}>{paymentItemValue}₾</span>
+      <span
+        className={styles.paymentItemValue}
+        style={{ color: color ? color : '' }}
+      >
+        {paymentItemValue}₾
+      </span>
     </div>
   );
 };
