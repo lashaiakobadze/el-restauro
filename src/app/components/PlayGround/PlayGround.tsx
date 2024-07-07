@@ -170,6 +170,22 @@ const PlayGround: React.FC<PlayGroundProps> = () => {
           onDecrement={() => handleDecrement()}
           hasBorder={false}
         />
+        <Counter
+          withInput={true}
+          quantity={quantity}
+          hasBorder={false}
+          onIncrement={handleIncrement}
+          onDecrement={handleDecrement}
+          onQuantityChange={(newQuantity) => setQuantity(newQuantity)}
+        />
+        <Counter
+          withInput={true}
+          quantity={quantity}
+          hasBorder={true}
+          onIncrement={handleIncrement}
+          onDecrement={handleDecrement}
+          onQuantityChange={(newQuantity) => setQuantity(newQuantity)}
+        />
 
         <GeneralFilter />
 
