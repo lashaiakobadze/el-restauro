@@ -27,3 +27,27 @@
   line-height: 16.32px;
   text-align: center;
 }
+
+.quantityInput {
+  width: 25px;
+  border: 0.5px solid #dfdfdf;
+  border-radius: 0.5px;
+  margin: 0 2px;
+  text-align: center;
+  -moz-appearance: textfield;
+}
+
+.quantityInput::-webkit-outer-spin-button,
+.quantityInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantityInput.active {
+  color: #000080;
+}
+
+.quantityInput:focus {
+  outline: none;
+  border-color: #000080;
+}

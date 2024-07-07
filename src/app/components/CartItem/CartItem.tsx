@@ -39,10 +39,12 @@ const CartItem: React.FC<CartItemProps> = () => {
             <span>რაოდენობა</span>
             {/* ToDo: switch it with custom design as in figma */}
             <Counter
+              withInput={true}
               quantity={quantity}
               hasBorder={false}
               onIncrement={handleIncrement}
               onDecrement={handleDecrement}
+              onQuantityChange={(newQuantity) => setQuantity(newQuantity)}
             />
           </div>
           <span className={styles.cartItemPrice}>
