@@ -1,0 +1,42 @@
+.cartContainer {
+  padding: 64px 56px;
+}
+
+.cartHeader {
+  padding: 24px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+
+.cartHeader h2 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.76px;
+  text-align: center;
+  color: #000000;
+}
+
+.cartCount {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 17.68px;
+  text-align: center;
+  color: #666666;
+}
+
+.cartLayout {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.cartList {
+  width: 840px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+  border-top: 1px solid #aaaaaa4a;
+}

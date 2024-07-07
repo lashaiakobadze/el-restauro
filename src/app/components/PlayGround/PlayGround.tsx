@@ -24,6 +24,9 @@ import GeneralActionsItem from '../GeneralActionsItem/GeneralActionsItem';
 import DailyDiscountItem from '../DailyDiscountItem/DailyDiscountItem';
 import DailyDiscountBanner from '../DailyDiscountBanner/DailyDiscountBanner';
 import VoucherOrder from '../VoucherOrder/VoucherOrder';
+import Cross from '../ui/Cross/Cross';
+import Favorite from '../ui/Favorite/Favorite';
+import CompareAction from '../ui/CompareAction/CompareAction';
 
 interface PlayGroundProps {}
 
@@ -127,6 +130,14 @@ const PlayGround: React.FC<PlayGroundProps> = () => {
         />
 
         <MapBtn />
+
+        <Cross isActive={false} />
+        <Cross isActive={true} />
+
+        <Favorite isActive={false} />
+        <Favorite isActive={true} />
+
+        <CompareAction isActive={false} />
       </div>
 
       <h2>UI elements</h2>

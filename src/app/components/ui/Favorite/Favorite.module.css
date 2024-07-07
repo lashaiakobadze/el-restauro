@@ -1,0 +1,15 @@
+.favorite {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+.favoriteIcon {
+  margin-left: 1px;
+  margin-top: 1px;
+}

@@ -1,0 +1,28 @@
+.cross {
+  width: 27px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: none;
+  border: 1px solid #dfdfe6;
+  transition:
+    background-color 0.3s,
+    border 0.3s;
+}
+
+.cross:hover {
+  background-color: #ff6347;
+  border: 1px solid #ff6347;
+}
+
+.cross.active {
+  background-color: #ff6347;
+  border: 1px solid #ff6347;
+}
+
+.cross.active:hover {
+  background-color: #ff6347;
+  border: 1px solid #ff6347;
+}

@@ -1,0 +1,30 @@
+.compare {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+.compare:hover .compareIcon {
+  animation: spin 1s linear infinite;
+}
+
+.compareIcon {
+  margin-left: 1.5px;
+  margin-top: 1px;
+  transition: transform 0.3s ease;
+}
+
+/* Keyframes for the continuous spinning animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
