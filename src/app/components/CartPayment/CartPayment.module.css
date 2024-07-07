@@ -1,0 +1,85 @@
+.container {
+  width: 450px;
+  min-width: 325px;
+  padding: 24px 32px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.payment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 24px 0;
+  gap: 15px;
+}
+
+.paymentContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.paymentContentTitle {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.014em;
+  text-align: left;
+  color: #000000;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #92989f38;
+}
+
+.paymentContentQuantity {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paymentContentQuantity span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.014em;
+  text-align: left;
+  color: #606060;
+}
+
+.paymentContentLink {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #92989f38;
+}
+
+.paymentContentLink .navLink {
+  margin-right: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.014em;
+  text-align: left;
+  color: #000000;
+}
+
+.paymentContentLink .navLink:hover {
+  color: var(--main-bg-color-hover);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 18px;
+}

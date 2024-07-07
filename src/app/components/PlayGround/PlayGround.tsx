@@ -27,6 +27,7 @@ import VoucherOrder from '../VoucherOrder/VoucherOrder';
 import Cross from '../ui/Cross/Cross';
 import Favorite from '../ui/Favorite/Favorite';
 import CompareAction from '../ui/CompareAction/CompareAction';
+import CartPayment from '../CartPayment/CartPayment';
 
 interface PlayGroundProps {}
 
@@ -193,6 +194,8 @@ const PlayGround: React.FC<PlayGroundProps> = () => {
         <Orders />
 
         <VoucherOrder />
+
+        <CartPayment />
 
         <CustomerInfo customerInfo={customerInfo} />
       </div>

@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
 import styles from './page.module.css';
-import VoucherOrder from '../components/VoucherOrder/VoucherOrder';
 import CartItem from '../components/CartItem/CartItem';
+import CartPayment from '../components/CartPayment/CartPayment';
 
 const Page = () => {
   return (
@@ -18,7 +18,7 @@ const Page = () => {
           <CartItem />
         </div>
 
-        <VoucherOrder />
+        <CartPayment />
       </div>
     </div>
   );

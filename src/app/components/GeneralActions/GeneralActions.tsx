@@ -2,6 +2,7 @@
 import React from 'react';
 import styles from './GeneralActions.module.css';
 import GeneralActionsItem from '../GeneralActionsItem/GeneralActionsItem';
+import Link from 'next/link';
 
 interface GeneralActionsProps {
   props?: string;
@@ -9,11 +10,15 @@ interface GeneralActionsProps {
 
 const GeneralActions: React.FC<GeneralActionsProps> = ({ props }) => {
   props ? console.log(props) : null;
+
   return (
     <div className={styles.actions}>
       <div className={styles.useActions}>
         <GeneralActionsItem text={'შენახული'} icon={'saved'} />
-        <GeneralActionsItem text={'კალათა'} icon={'cart'} />
+
+        <Link href={'/cart'}>
+          <GeneralActionsItem text={'კალათა'} icon={'cart'} />
+        </Link>
       </div>
 
       <div className={styles.useActionsAuth}>
