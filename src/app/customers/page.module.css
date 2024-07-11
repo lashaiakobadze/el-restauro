@@ -1,0 +1,50 @@
+.customers {
+  padding: 15px;
+  max-width: 1365px;
+}
+
+.customerTitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32.64px;
+  letter-spacing: -0.019em;
+  text-align: left;
+  color: #252c32;
+  margin: 18px 0;
+}
+
+.customersFilters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dynamicTabs {
+  display: flex;
+  gap: 13px;
+}
+
+.dynamicTabContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.customFilters {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.04px;
+  text-align: center;
+  color: #424242;
+  cursor: pointer;
+}
+
+.customersItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,81 @@
+.customer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 650px;
+  padding: 21px 18px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e0e2e6;
+}
+
+.customerLogo {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: -40px;
+  border-radius: 50%;
+  border: 1px solid #dde2e4;
+}
+
+.customerInfo {
+  margin-right: 16px;
+}
+
+.customerName {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.76px;
+  text-align: left;
+  color: #666666;
+  margin-bottom: 16px;
+}
+
+.contactList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+.icon {
+  margin-right: 4px;
+  height: 16px;
+  width: 16px;
+  color: #000000;
+}
+
+.link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #989b9e;
+  text-decoration: none;
+  transition: color 200ms ease-in-out;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #1d4ed8;
+}
+
+.textGreen {
+  color: #10b981;
+}
+
+.textRed {
+  color: #ef4444;
+}
+
+.customerGallery {
+  border-radius: 0px, 10px, 10px, 0px;
+}

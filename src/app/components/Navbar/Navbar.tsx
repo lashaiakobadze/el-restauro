@@ -8,14 +8,14 @@ const Navbar: React.FC = () => {
   const [categories, setCategories] = useState<ICategories[]>([]);
 
   const defaultCategories: ICategories[] = [
-    { id: '1', name: 'კაფე', path: '/customer' },
-    { id: '2', name: 'ბარი', path: '/customer' },
-    { id: '3', name: 'რესტორანი', path: '/customer' },
-    { id: '4', name: 'ბუნგალო', path: '/customer' },
-    { id: '5', name: 'თეატრი', path: '/customer' },
-    { id: '6', name: 'კინო', path: '/customer' },
-    { id: '7', name: 'კლუბი', path: '/customer' },
-    { id: '8', name: 'სამზარეულო', path: '/customer' },
+    { id: '1', name: 'კაფე', path: '/customers' },
+    { id: '2', name: 'ბარი', path: '/customers' },
+    { id: '3', name: 'რესტორანი', path: '/customers' },
+    { id: '4', name: 'ბუნგალო', path: '/customers' },
+    { id: '5', name: 'თეატრი', path: '/customers' },
+    { id: '6', name: 'კინო', path: '/customers' },
+    { id: '7', name: 'კლუბი', path: '/customers' },
+    { id: '8', name: 'სამზარეულო', path: '/customers' },
   ];
   useEffect(() => {
     // Simulating fetching categories and handling failure
