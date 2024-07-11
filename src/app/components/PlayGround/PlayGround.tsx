@@ -28,6 +28,11 @@ import Cross from '../ui/Cross/Cross';
 import Favorite from '../ui/Favorite/Favorite';
 import CompareAction from '../ui/CompareAction/CompareAction';
 import CartPayment from '../CartPayment/CartPayment';
+import Customer from '../Customer/Customer';
+import Pagination from '../ui/Pagination/Pagination';
+// import SliderCenterMode from '../slider-center-mode/SliderCenterMode';
+// import SliderWithThumbnails from '../slider-with-thumbnails/SliderWithThumbnails';
+// import ImageSlider from '../slider/Slider';
 
 interface PlayGroundProps {}
 
@@ -76,6 +81,14 @@ const PlayGround: React.FC<PlayGroundProps> = () => {
       'Saturday: 10 AM - 2 PM',
       'Sunday: Closed',
     ],
+  };
+
+  const [currentPage, setCurrentPage] = useState(2);
+  const totalPages = 8;
+
+  const handlePageChange = (page: number) => {
+    if (page < 1 || page > totalPages) return;
+    setCurrentPage(page);
   };
 
   return (
@@ -200,6 +213,12 @@ const PlayGround: React.FC<PlayGroundProps> = () => {
           imgUrl="/images/daily-discount/სენდვიჩი.png"
           title="სენდვიჩი"
         />
+
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={handlePageChange}
+        />
       </div>
 
       <h2>Custom components</h2>
@@ -214,6 +233,15 @@ const PlayGround: React.FC<PlayGroundProps> = () => {
         <CartPayment />
 
         <CustomerInfo customerInfo={customerInfo} />
+
+        <Customer />
+      </div>
+
+      <h2>Sliders</h2>
+      <div className={styles.items}>
+        {/* <SliderCenterMode /> */}
+        {/* <SliderWithThumbnails /> */}
+        {/* <ImageSlider /> */}
       </div>
     </div>
   );

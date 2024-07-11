@@ -1,0 +1,31 @@
+.customer-gallery {
+  max-width: 200px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.customer-gallery .swiper-button-prev,
+.customer-gallery .swiper-button-next {
+  top: 36px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.customer-gallery .swiper-button-prev {
+  left: unset;
+  right: 36px;
+}
+
+.customer-gallery .swiper-button-prev::after {
+  font-size: 8px !important;
+  color: #000000a8;
+  font-weight: bold;
+}
+
+.customer-gallery .swiper-button-next::after {
+  font-size: 8px !important;
+  color: #000000a8;
+  font-weight: bold;
+}

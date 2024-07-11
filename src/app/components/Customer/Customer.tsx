@@ -3,7 +3,13 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { MapPinIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/16/solid';
 import styles from './Customer.module.css';
+import './Customer.css';
 import Rating from '../Rating/Rating';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 interface CustomerProps {}
 
@@ -11,6 +17,13 @@ const Customer: React.FC<CustomerProps> = () => {
   const [isOpen, setIsOpen] = useState(true);
 
   const handleClick = () => setIsOpen(!isOpen);
+
+  const images = [
+    { name: '/images/customer/restaurant-republic.png' },
+    { name: '/images/customer/tabla.png' },
+    { name: '/images/customer/odobade.png' },
+    { name: '/images/customer/iasamani.png' },
+  ];
 
   return (
     <div className={styles.customer}>
@@ -58,13 +71,27 @@ const Customer: React.FC<CustomerProps> = () => {
         </ul>
       </div>
 
-      <div className={styles.customerGallery}>
-        <Image
-          width={280}
-          height={200}
-          src="/images/customer/restaurant-republic.png"
-          alt="customer"
-        />
+      <div className={`${styles.customerGallery} customer-gallery`}>
+        <Swiper
+          spaceBetween={1}
+          loop={true}
+          slidesPerView={1}
+          modules={[Navigation, Pagination]}
+          pagination={{ clickable: true }}
+          navigation
+        >
+          {images.map((el, index) => (
+            <SwiperSlide key={index}>
+              <Image
+                src={el.name}
+                alt={el.name}
+                className={styles.customerGalleryImg}
+                width={200}
+                height={200}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );

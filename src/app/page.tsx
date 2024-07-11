@@ -1,7 +1,4 @@
 'use client';
-// import SliderWithThumbnails from '@/app/components/slider-with-thumbnails/SliderWithThumbnails';
-// import ImageSlider from './components/slider/Slider';
-// import SliderCenterMode from '@/app/components/slider-center-mode/SliderCenterMode';
 import CountryCard from './components/CountryCard/CountryCard';
 import FoodCard from './components/FoodCard.tsx/FoodCard';
 import Resto from './components/Resto/Resto';
@@ -20,10 +17,6 @@ export default function Home() {
   return (
     <>
       <PlayGround />
-
-      {/* <SliderCenterMode />
-      <SliderWithThumbnails />
-      <ImageSlider /> */}
 
       <CountryCard name={'test'} image={'/images/country-imgs/khingali.svg'} />
       <FoodCard
