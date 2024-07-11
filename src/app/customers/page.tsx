@@ -47,7 +47,17 @@ const Page = () => {
         </div>
 
         <div className={styles.customersItems}>
-          <Customer />
+          <div className={styles.customersItem}>
+            <Customer />
+          </div>
+
+          <div className={styles.customersItem}>
+            <Customer />
+          </div>
+
+          <div className={styles.customersItem}>
+            <Customer />
+          </div>
         </div>
       </div>
     </>

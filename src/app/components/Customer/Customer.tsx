@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { MapPinIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/16/solid';
 import styles from './Customer.module.css';
+import Rating from '../Rating/Rating';
 
 interface CustomerProps {}
 
@@ -34,7 +35,7 @@ const Customer: React.FC<CustomerProps> = () => {
               rel="noopener noreferrer"
               className={styles.link}
             >
-              თბილისი, თამარ ჭოველიძის 7 ნომერი
+              თბილისი, ვაჟა-ფშაველას ქუჩა
             </a>
           </li>
           <li className={styles.listItem}>
@@ -52,6 +53,8 @@ const Customer: React.FC<CustomerProps> = () => {
             </span>
             <span className={styles.link}>⋅ დახურვის დრო 11 PM ⋅</span>
           </li>
+
+          <Rating stars={[1, 1, 1, 0.5, 0]} />
         </ul>
       </div>
 

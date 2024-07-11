@@ -20,6 +20,7 @@
 }
 
 .customerInfo {
+  margin-top: 32px;
   margin-right: 16px;
 }
 
@@ -44,7 +45,6 @@
 .listItem {
   display: flex;
   align-items: center;
-  padding-bottom: 12px;
 }
 
 .icon {
@@ -77,5 +77,5 @@
 }
 
 .customerGallery {
-  border-radius: 0px, 10px, 10px, 0px;
+  border-radius: 0px 10px 10px 0px;
 }

@@ -1,6 +1,7 @@
 .customers {
   padding: 15px;
   max-width: 1365px;
+  margin: auto;
 }
 
 .customerTitle {
@@ -43,8 +44,15 @@
 }
 
 .customersItems {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 100px 0;
+}
+
+.customersItem {
+  width: 49%;
+  margin-bottom: 77px;
 }
