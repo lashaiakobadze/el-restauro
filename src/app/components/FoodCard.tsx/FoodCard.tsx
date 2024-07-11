@@ -4,13 +4,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 
-import styles from './fiid-card.module.css';
+import styles from './food-card.module.css';
 import './food-card.css';
 import { FavoriteEnum } from '@/app/common/enums/favorite.enum';
 
 import 'swiper/css'; // Import Swiper styles
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import Rating from '../Rating/Rating';
 
 export interface IFoodResto {
   images: { name: string }[];
@@ -56,6 +57,21 @@ export default function FoodCard(props: IFoodResto) {
 
   return (
     <div className={`${styles['food-card']} food-card`}>
+      <div className={styles.heartIcon} onClick={toggleFavorite}>
+        <Image
+          src={
+            favorite === 'NORMAL'
+              ? '/images/food-imgs/emptyHeart.svg'
+              : favorite === 'FAVORITED'
+                ? '/images/food-imgs/filledHeart.svg'
+                : '/images/food-imgs/x.svg'
+          }
+          width={14}
+          height={12}
+          alt="Heart Icon"
+          style={{ marginTop: '2px' }}
+        />
+      </div>
       <Swiper
         spaceBetween={1}
         loop={true}
@@ -74,7 +90,7 @@ export default function FoodCard(props: IFoodResto) {
                 width={300}
                 height={200}
               />
-              <div className={styles.heartIcon} onClick={toggleFavorite}>
+              {/* <div className={styles.heartIcon} onClick={toggleFavorite}>
                 <Image
                   src={
                     favorite === 'NORMAL'
@@ -88,7 +104,7 @@ export default function FoodCard(props: IFoodResto) {
                   alt="Heart Icon"
                   style={{ marginTop: '2px' }}
                 />
-              </div>
+              </div> */}
             </div>
           </SwiperSlide>
         ))}
@@ -97,6 +113,7 @@ export default function FoodCard(props: IFoodResto) {
         <div className={styles['fc-title']}>{name}</div>
         <p>{address}</p>
         <div className={styles['fc-prize']}>{price}</div>
+        <Rating stars={[1, 1, 1, 0.5, 0]} />
       </div>
     </div>
   );
