@@ -1,11 +1,20 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import SliderCenterMode from '../components/slider-center-mode/SliderCenterMode';
 import styles from './page.module.css';
 import DynamicTab from '../components/ui/DynamicTab/DynamicTab';
 import Customer from '../components/Customer/Customer';
+import Pagination from '../components/ui/Pagination/Pagination';
 
 const Page = () => {
+  const [currentPage, setCurrentPage] = useState(2);
+  const totalPages = 8;
+
+  const handlePageChange = (page: number) => {
+    if (page < 1 || page > totalPages) return;
+    setCurrentPage(page);
+  };
+
   return (
     <>
       <SliderCenterMode />
@@ -59,6 +68,12 @@ const Page = () => {
             <Customer />
           </div>
         </div>
+
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={handlePageChange}
+        />
       </div>
     </>
   );

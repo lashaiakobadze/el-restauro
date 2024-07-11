@@ -1,0 +1,35 @@
+.paginationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.pageButton {
+  border: none;
+  background: none;
+  color: #333;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin: 4px;
+  cursor: pointer;
+  outline: none;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  border: 1px solid #dddddd;
+}
+
+.pageButton:hover {
+  background-color: #ddd;
+}
+
+.pageButtonActive {
+  color: #fff;
+  background-color: #ff6347;
+  border: 1px solid #ff6347;
+}
+
+.ellipsis {
+  margin: 0 8px;
+}
