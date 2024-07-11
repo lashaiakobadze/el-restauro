@@ -1,11 +1,12 @@
 .food-card {
+  position: relative;
   max-width: 320px;
   border-radius: 10px;
   background: #fff;
   overflow: hidden;
 }
 .imageContainer {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   max-height: 240px;
 }
@@ -21,6 +22,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  z-index: 100;
 }
 .heart {
   margin-top: 60px;
@@ -74,7 +76,7 @@
     letter-spacing: -0.07px;
   }
   .fc-info {
-    padding: 0 24px;
+    padding: 4px 14px;
     gap: 2px;
   }
   .fc-info p {
