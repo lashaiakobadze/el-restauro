@@ -1,9 +1,3 @@
-.customers {
-  padding: 15px;
-  max-width: 1365px;
-  margin: auto;
-}
-
 .customerTitle {
   font-size: 24px;
   font-weight: 600;
@@ -12,6 +6,14 @@
   text-align: left;
   color: #252c32;
   margin: 18px 0;
+  padding-left: 15px;
+}
+
+.customers {
+  display: flex;
+  padding: 15px;
+  max-width: 1365px;
+  margin: auto;
 }
 
 .customersFilters {
@@ -43,16 +45,117 @@
   cursor: pointer;
 }
 
+.customFiltersTitle {
+  margin-right: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.76px;
+  letter-spacing: -0.019em;
+  text-align: left;
+  color: #545b61;
+}
+
+.customFiltersBtn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.32px;
+  text-align: center;
+  color: #21243db2;
+  cursor: pointer;
+}
+
+.customFiltersCounter {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.76px;
+  letter-spacing: -0.019em;
+  text-align: left;
+  color: #4094f7;
+}
+
 .customersItems {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 100px;
+  padding-top: 66px;
 }
 
 .customersItem {
   width: 49%;
   margin-bottom: 77px;
+}
+
+.customMainFilters {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 24px;
+}
+
+.customMainFiltersTabs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+  margin-top: 8px;
+}
+
+.customMainFiltersCategory {
+  width: 100%;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.customMainFiltersCategoryTitle {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.006em;
+  text-align: left;
+  color: #252c32;
+  margin-bottom: 18px;
+}
+
+.customMainFiltersCategoryItems {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.customMainFiltersCategoryItem {
+  max-width: 280px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.04px;
+  letter-spacing: 0.005em;
+  text-align: left;
+  color: #646567;
+  cursor: pointer;
+}
+
+.circle {
+  margin-right: 8px;
+}
+
+.customMainFiltersCategoryItemName {
+  margin-right: 24px;
+}
+
+.customMainFiltersCategoryItemCount {
+  color: #989b9e;
 }

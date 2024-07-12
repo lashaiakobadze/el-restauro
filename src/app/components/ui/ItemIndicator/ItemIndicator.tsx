@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './ItemIndicator.module.css';
 
 type ItemIndicatorProps = {
@@ -6,9 +6,12 @@ type ItemIndicatorProps = {
 };
 
 const ItemIndicator: React.FC<ItemIndicatorProps> = ({ isActive }) => {
+  const [active, setActive] = useState(false);
+
   return (
     <div
-      className={`${styles.indicator} ${isActive ? styles.active : styles.inactive}`}
+      onClick={() => setActive(!active)}
+      className={`${styles.indicator} ${isActive || active ? styles.active : styles.inactive}`}
     />
   );
 };
