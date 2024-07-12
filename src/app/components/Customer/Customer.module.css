@@ -46,6 +46,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  cursor: pointer;
 }
 
 .icon {
@@ -67,6 +68,15 @@
 .link:hover {
   text-decoration: underline;
   color: #1d4ed8;
+}
+
+.scheduleTxt {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #989b9e;
+  text-decoration: none;
+  transition: color 200ms ease-in-out;
 }
 
 .textGreen {

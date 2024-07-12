@@ -55,7 +55,7 @@ const CustomerInfo = ({ customerInfo }: { customerInfo: ICustomerInfo }) => {
             <Image
               width={16}
               height={16}
-              src={'/icons/map-pin.svg'}
+              src={'/icons/phone-call.svg'}
               alt="clock"
             />
             <a href="tel:+995322123321" className={styles.link}>
@@ -69,10 +69,12 @@ const CustomerInfo = ({ customerInfo }: { customerInfo: ICustomerInfo }) => {
               src={'/icons/clock.svg'}
               alt="clock"
             />
-            <span className={isOpen ? 'text-green-500' : 'text-red-500'}>
+            <span
+              className={`${isOpen ? styles.textGreen : styles.textRed} ${styles.scheduleTxt}`}
+            >
               ღიაა
             </span>
-            <span className="mx-2 text-gray-500">⋅ დახურვის დრო 11 PM ⋅</span>
+            <span className={styles.scheduleTxt}>⋅ დახურვის დრო 11 PM ⋅</span>
             <WorkingHoursDropdown />
           </li>
         </ul>

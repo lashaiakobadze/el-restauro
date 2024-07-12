@@ -74,11 +74,11 @@ const Customer: React.FC<CustomerProps> = () => {
               alt="clock"
             />
             <span
-              className={`${isOpen ? styles.textGreen : styles.textRed} ${styles.link}`}
+              className={`${isOpen ? styles.textGreen : styles.textRed} ${styles.scheduleTxt}`}
             >
               ღიაა
             </span>
-            <span className={styles.link}>⋅ დახურვის დრო 11 PM ⋅</span>
+            <span className={styles.scheduleTxt}>⋅ დახურვის დრო 11 PM</span>
           </li>
 
           <Rating stars={[1, 1, 1, 0.5, 0]} />
