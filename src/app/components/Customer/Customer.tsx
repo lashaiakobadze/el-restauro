@@ -1,7 +1,6 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { MapPinIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/16/solid';
 import styles from './Customer.module.css';
 import './Customer.css';
 import Rating from '../Rating/Rating';
@@ -41,7 +40,12 @@ const Customer: React.FC<CustomerProps> = () => {
 
         <ul className={styles.contactList}>
           <li className={styles.listItem}>
-            <MapPinIcon className={styles.icon} />
+            <Image
+              width={16}
+              height={16}
+              src={'/icons/map-pin.svg'}
+              alt="clock"
+            />
             <a
               href="https://www.google.com/maps/search/?api=1&query=7+Tamar+Chovelidze+St,+Tbilisi"
               target="_blank"
@@ -52,13 +56,23 @@ const Customer: React.FC<CustomerProps> = () => {
             </a>
           </li>
           <li className={styles.listItem}>
-            <PhoneIcon className={styles.icon} />
+            <Image
+              width={16}
+              height={16}
+              src={'/icons/phone-call.svg'}
+              alt="clock"
+            />
             <a href="tel:+995322123321" className={styles.link}>
               032 2 123 321
             </a>
           </li>
           <li className={styles.listItem} onClick={handleClick}>
-            <EnvelopeIcon className={styles.icon} />
+            <Image
+              width={16}
+              height={16}
+              src={'/icons/clock.svg'}
+              alt="clock"
+            />
             <span
               className={`${isOpen ? styles.textGreen : styles.textRed} ${styles.link}`}
             >

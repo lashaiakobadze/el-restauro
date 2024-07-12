@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 import styles from './CustomerInfo.module.css';
 import { ICustomerInfo } from './ICustomerInfo';
-import {
-  MapPinIcon,
-  PhoneIcon,
-  EnvelopeIcon,
-} from '@heroicons/react/24/outline';
 import WorkingHoursDropdown from './workingHoursDropdown/WorkingHoursDropdown';
 import ContactItem from '../ui/ContactItem/ContactItem';
 
@@ -40,7 +36,12 @@ const CustomerInfo = ({ customerInfo }: { customerInfo: ICustomerInfo }) => {
       <nav className={styles.contactList}>
         <ul>
           <li className={styles.listItem}>
-            <MapPinIcon className={styles.icon} />
+            <Image
+              width={16}
+              height={16}
+              src={'/icons/map-pin.svg'}
+              alt="clock"
+            />
             <a
               href="https://www.google.com/maps/search/?api=1&query=7+Tamar+Chovelidze+St,+Tbilisi"
               target="_blank"
@@ -51,13 +52,23 @@ const CustomerInfo = ({ customerInfo }: { customerInfo: ICustomerInfo }) => {
             </a>
           </li>
           <li className={styles.listItem}>
-            <PhoneIcon className={styles.icon} />
+            <Image
+              width={16}
+              height={16}
+              src={'/icons/map-pin.svg'}
+              alt="clock"
+            />
             <a href="tel:+995322123321" className={styles.link}>
               032 2 123 321
             </a>
           </li>
           <li className={styles.listItem}>
-            <EnvelopeIcon className={styles.icon} />
+            <Image
+              width={16}
+              height={16}
+              src={'/icons/clock.svg'}
+              alt="clock"
+            />
             <span className={isOpen ? 'text-green-500' : 'text-red-500'}>
               ღიაა
             </span>

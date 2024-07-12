@@ -38,11 +38,11 @@ export default Rating;
 const getImageSource = (value: number): string => {
   let path: string;
   if (value === 1) {
-    path = '/images/rating-imgs/full-star.svg';
+    path = '/icons/full-star.svg';
   } else if (value > 0 && value < 1) {
-    path = '/images/rating-imgs/half-star.svg';
+    path = '/icons/half-star.svg';
   } else if (value === 0) {
-    path = '/images/rating-imgs/empty-star.svg';
+    path = '/icons/empty-star.svg';
   } else {
     // Default fallback if value is not recognized
     path = '';
