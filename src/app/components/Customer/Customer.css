@@ -29,3 +29,17 @@
   color: #000000a8;
   font-weight: bold;
 }
+
+.customer-gallery .swiper-pagination-bullet {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.customer-gallery:hover .swiper-pagination-bullet {
+  opacity: 0.2;
+}
+
+.customer-gallery:hover .swiper-pagination-bullet-active {
+  background: #ff5d47 !important;
+  opacity: 1;
+}
