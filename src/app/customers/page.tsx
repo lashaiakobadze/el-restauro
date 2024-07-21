@@ -31,6 +31,12 @@ const Page = () => {
   //     setActive(active);
   //   }
 
+  const dropdownItems = [
+    <span key="item1">Item 1</span>,
+    <span key="item2">Item 2</span>,
+    <span key="item3">Item 3</span>,
+  ];
+
   return (
     <>
       <SliderCenterMode />
@@ -352,7 +358,7 @@ const Page = () => {
             )}
 
             <div className={styles.dynamicTabs}>
-              <DynamicTab isActive={false}>
+              <DynamicTab isActive={false} dropdownItems={dropdownItems}>
                 <div className={styles.dynamicTabContent}>
                   <span style={{ fontWeight: 900 }}>რეიტინგი</span>
                   <img src="/icons/Vector.svg" alt="Vector svg" />
