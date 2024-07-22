@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import { ICategories } from '@/app/common/interfaces';
+import { ICategories } from '@/common/interfaces';
 import styles from './Navbar.module.css';
 import Link from 'next/link';
 

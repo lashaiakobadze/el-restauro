@@ -1,12 +1,12 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import SliderCenterMode from '../components/slider-center-mode/SliderCenterMode';
+import SliderCenterMode from '../../components/slider-center-mode/SliderCenterMode';
 import styles from './page.module.css';
-import DynamicTab from '../components/ui/DynamicTab/DynamicTab';
-import Customer from '../components/Customer/Customer';
-import Pagination from '../components/ui/Pagination/Pagination';
-import ItemIndicator from '../components/ui/ItemIndicator/ItemIndicator';
+import DynamicTab from '../../ui/DynamicTab/DynamicTab';
+import Customer from '../../components/Customer/Customer';
+import Pagination from '../../ui/Pagination/Pagination';
+import ItemIndicator from '../../ui/ItemIndicator/ItemIndicator';
 
 const Page = () => {
   const [isFiltersOpen, setIsFiltersOpen] = useState(false);

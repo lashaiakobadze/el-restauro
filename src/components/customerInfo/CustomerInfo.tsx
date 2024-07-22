@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from './CustomerInfo.module.css';
 import { ICustomerInfo } from './ICustomerInfo';
 import WorkingHoursDropdown from './workingHoursDropdown/WorkingHoursDropdown';
-import ContactItem from '../ui/ContactItem/ContactItem';
+import ContactItem from '../../ui/ContactItem/ContactItem';
 
 const CustomerInfo = ({ customerInfo }: { customerInfo: ICustomerInfo }) => {
   const [isOpen, setIsOpen] = useState(true);

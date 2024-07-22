@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './MenuItem.module.css';
-import Counter from '../ui/Counter/Counter';
+import Counter from '../../ui/Counter/Counter';
 
 type MenuItemProps = {
   imageSrc: string;

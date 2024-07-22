@@ -1,11 +1,11 @@
 'use client';
-import CountryCard from './components/CountryCard/CountryCard';
-import FoodCard from './components/FoodCard.tsx/FoodCard';
-import Resto from './components/Resto/Resto';
-import OfferedCard from './components/OfferedCard/OfferedCard';
+import CountryCard from '../components/CountryCard/CountryCard';
+import FoodCard from '../components/FoodCard.tsx/FoodCard';
+import Resto from '../components/Resto/Resto';
+import OfferedCard from '../components/OfferedCard/OfferedCard';
 import { SetStateAction, useState } from 'react';
-import PlayGround from './components/PlayGround/PlayGround';
-import { FavoriteEnum } from './common/enums';
+import PlayGround from '../components/PlayGround/PlayGround';
+import { FavoriteEnum } from '../common/enums';
 
 export default function Home() {
   const [favoriteState, setFavoriteState] = useState(FavoriteEnum.UNFAVORITE);

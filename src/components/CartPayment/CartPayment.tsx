@@ -1,11 +1,11 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { PaymentTypeEnum } from '@/app/common/enums';
+import { PaymentTypeEnum } from '@/common/enums';
 import styles from './CartPayment.module.css';
 import PaymentItem from '../PaymentItem/PaymentItem';
 import Link from 'next/link';
-import Button from '../ui/Button/Button';
+import Button from '../../ui/Button/Button';
 
 interface CartPaymentProps {}
 

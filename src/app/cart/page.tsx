@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
 import styles from './page.module.css';
-import CartItem from '../components/CartItem/CartItem';
-import CartPayment from '../components/CartPayment/CartPayment';
+import CartItem from '../../components/CartItem/CartItem';
+import CartPayment from '../../components/CartPayment/CartPayment';
 
 const Page = () => {
   return (

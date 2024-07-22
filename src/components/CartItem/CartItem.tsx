@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 
 import styles from './CartItem.module.css';
-import Cross from '../ui/Cross/Cross';
-import Counter from '../ui/Counter/Counter';
-import Favorite from '../ui/Favorite/Favorite';
-import CompareAction from '../ui/CompareAction/CompareAction';
+import Cross from '../../ui/Cross/Cross';
+import Counter from '../../ui/Counter/Counter';
+import Favorite from '../../ui/Favorite/Favorite';
+import CompareAction from '../../ui/CompareAction/CompareAction';
 
 interface CartItemProps {}
 

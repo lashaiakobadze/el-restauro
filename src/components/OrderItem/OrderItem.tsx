@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import styles from './OrderItem.module.css';
-import Counter from '../ui/Counter/Counter';
+import Counter from '../../ui/Counter/Counter';
 
 interface OrderItemProps {
   title: string;

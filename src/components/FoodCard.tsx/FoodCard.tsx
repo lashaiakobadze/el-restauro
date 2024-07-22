@@ -11,7 +11,7 @@ import 'swiper/css'; // Import Swiper styles
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Rating from '../Rating/Rating';
-import { FavoriteEnum } from '@/app/common/enums';
+import { FavoriteEnum } from '@/common/enums';
 
 export interface IFoodResto {
   images: { name: string }[];

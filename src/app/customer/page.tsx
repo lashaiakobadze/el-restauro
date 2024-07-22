@@ -1,13 +1,13 @@
 'use client';
 import React from 'react';
-import { ICustomerInfo } from '../components/customerInfo/ICustomerInfo';
-import CustomerInfo from '../components/customerInfo/CustomerInfo';
-import SliderWithThumbnails from '../components/slider-with-thumbnails/SliderWithThumbnails';
+import { ICustomerInfo } from '../../components/customerInfo/ICustomerInfo';
+import CustomerInfo from '../../components/customerInfo/CustomerInfo';
+import SliderWithThumbnails from '../../components/slider-with-thumbnails/SliderWithThumbnails';
 
 import styles from './page.module.css';
-import CustomerDetails from '../components/CustomerDetails/CustomerDetails';
-import Orders from '../components/Orders/Orders';
-import Breadcrumb from '../components/Breadcrumb/Breadcrumb';
+import CustomerDetails from '../../components/CustomerDetails/CustomerDetails';
+import Orders from '../../components/Orders/Orders';
+import Breadcrumb from '../../components/Breadcrumb/Breadcrumb';
 
 const customerInfo: ICustomerInfo = {
   lat: 41.7151,

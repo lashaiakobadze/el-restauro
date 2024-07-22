@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
 import styles from './PaymentItem.module.css';
-import ItemIndicator from '../ui/ItemIndicator/ItemIndicator';
-import { PaymentTypeEnum } from '@/app/common/enums';
+import ItemIndicator from '../../ui/ItemIndicator/ItemIndicator';
+import { PaymentTypeEnum } from '@/common/enums';
 
 interface PaymentItemProps {
   isActive: boolean;
