@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './PaymentItem.module.css';
 import ItemIndicator from '../ui/ItemIndicator/ItemIndicator';
-import { PaymentTypeEnum } from '@/app/common/types/paymentType.enum';
+import { PaymentTypeEnum } from '@/app/common/enums';
 
 interface PaymentItemProps {
   isActive: boolean;

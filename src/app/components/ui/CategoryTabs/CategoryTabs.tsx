@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './CategoryTabs.module.css';
 import MenuItem from '../../MenuItem/MenuItem';
 import { IMenuItemData } from '../../MenuItem/MenuItemData.interface';
-import { Tab } from '@/app/types';
+import { Tab } from '@/app/common/types';
 
 type TabsProps = {
   tabs: Tab[];

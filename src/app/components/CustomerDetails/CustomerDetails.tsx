@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Tabs from '../ui/Tabs/Tabs';
 import CategoryTabs from '../ui/CategoryTabs/CategoryTabs';
 import { IMenuItemData } from '../MenuItem/MenuItemData.interface';
-import { Tab } from '@/app/types';
+import { Tab } from '@/app/common/types';
 import styles from './CustomerDetails.module.css';
 
 const mainTabs: Tab[] = [

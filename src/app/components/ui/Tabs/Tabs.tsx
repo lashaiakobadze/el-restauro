@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import styles from './Tabs.module.css';
-import { Tab } from '@/app/types/tab.interface';
+import { Tab } from '@/app/common/types/tab.interface';
 
 interface TabsProps {
   tabs: Tab[];

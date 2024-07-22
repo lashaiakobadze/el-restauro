@@ -6,12 +6,12 @@ import Image from 'next/image';
 
 import styles from './food-card.module.css';
 import './food-card.css';
-import { FavoriteEnum } from '@/app/common/enums/favorite.enum';
 
 import 'swiper/css'; // Import Swiper styles
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Rating from '../Rating/Rating';
+import { FavoriteEnum } from '@/app/common/enums';
 
 export interface IFoodResto {
   images: { name: string }[];

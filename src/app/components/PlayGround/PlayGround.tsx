@@ -8,7 +8,7 @@ import RoundedTabPrimary from '../ui/RoundedTabPrimary/RoundedTabPrimary';
 import RoundedTabSecondary from '../ui/RoundedTabSecondary/RoundedTabSecondary';
 import Button from '../ui/Button/Button';
 import Tabs from '../ui/Tabs/Tabs';
-import { Tab } from '@/app/types';
+import { Tab } from '@/app/common/types';
 import ItemIndicator from '../ui/ItemIndicator/ItemIndicator';
 import Counter from '../ui/Counter/Counter';
 import ContactItem from '../ui/ContactItem/ContactItem';

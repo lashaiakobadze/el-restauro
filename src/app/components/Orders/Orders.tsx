@@ -1,10 +1,10 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { PaymentTypeEnum } from '@/app/common/enums';
 import styles from './Orders.module.css';
 import OrderItem from '../OrderItem/OrderItem';
 import PaymentItem from '../PaymentItem/PaymentItem';
-import { PaymentTypeEnum } from '@/app/common/types/paymentType.enum';
 import Button from '../ui/Button/Button';
 
 interface OrdersProps {}

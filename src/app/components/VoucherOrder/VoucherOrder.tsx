@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './VoucherOrder.module.css';
-import { PaymentTypeEnum } from '@/app/common/types/paymentType.enum';
+import { PaymentTypeEnum } from '@/app/common/enums';
 import PaymentItem from '../PaymentItem/PaymentItem';
 import Button from '../ui/Button/Button';
 import Counter from '../ui/Counter/Counter';
