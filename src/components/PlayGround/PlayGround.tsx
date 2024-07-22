@@ -31,6 +31,9 @@ import CartPayment from '../CartPayment/CartPayment';
 import Customer from '../Customer/Customer';
 import Pagination from '../../ui/Pagination/Pagination';
 import Bullet from '../Bullet/Bullet';
+import CartItem from '../CartItem/CartItem';
+import MenuItem from '../MenuItem/MenuItem';
+import SearchedItem from '../SearchedItem/SearchedItem';
 // import SliderCenterMode from '../slider-center-mode/SliderCenterMode';
 // import SliderWithThumbnails from '../slider-with-thumbnails/SliderWithThumbnails';
 // import ImageSlider from '../slider/Slider';
@@ -239,6 +242,16 @@ const PlayGround: React.FC<PlayGroundProps> = () => {
         <CustomerInfo customerInfo={customerInfo} />
 
         <Customer />
+
+        <CartItem />
+
+        <MenuItem
+          imageSrc="/images/menu-item.png"
+          title="ავაოკადოს სალათა"
+          price={20}
+        />
+
+        <SearchedItem />
       </div>
 
       <h2>Sliders</h2>
