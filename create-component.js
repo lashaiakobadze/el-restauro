@@ -7,7 +7,7 @@ if (!componentName) {
   process.exit(1);
 }
 
-const componentDir = path.join(__dirname, 'src/app/components', componentName);
+const componentDir = path.join(__dirname, 'src/components', componentName);
 if (fs.existsSync(componentDir)) {
   console.error('Component already exists.');
   process.exit(1);
