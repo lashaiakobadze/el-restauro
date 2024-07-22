@@ -17,20 +17,20 @@ const Header: React.FC<HeaderProps> = ({ props }) => {
     <>
       <header className={styles.headerContainer}>
         <div className={styles.maxWidth}>
+          <Link href={'/'} passHref>
+            <Image
+              className={styles.logo}
+              height={96}
+              width={48}
+              src={'logo.svg'}
+              alt="logo"
+            />
+          </Link>
           <div className={styles.header}>
-            <Link href={'/'} passHref>
-              <Image
-                className={styles.logo}
-                height={96}
-                width={48}
-                src={'logo.svg'}
-                alt="logo"
-              />
-            </Link>
             <div className={styles.filters}>
               <GeneralFilter />
+              <MapBtn />
             </div>
-            <MapBtn />
 
             <GeneralActions />
           </div>
