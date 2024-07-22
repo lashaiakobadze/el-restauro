@@ -30,6 +30,7 @@ import CompareAction from '../ui/CompareAction/CompareAction';
 import CartPayment from '../CartPayment/CartPayment';
 import Customer from '../Customer/Customer';
 import Pagination from '../ui/Pagination/Pagination';
+import Bullet from '../Bullet/Bullet';
 // import SliderCenterMode from '../slider-center-mode/SliderCenterMode';
 // import SliderWithThumbnails from '../slider-with-thumbnails/SliderWithThumbnails';
 // import ImageSlider from '../slider/Slider';
@@ -219,6 +220,9 @@ const PlayGround: React.FC<PlayGroundProps> = () => {
           totalPages={totalPages}
           onPageChange={handlePageChange}
         />
+
+        <Bullet isActive={true} />
+        <Bullet isActive={false} />
       </div>
 
       <h2>Custom components</h2>
