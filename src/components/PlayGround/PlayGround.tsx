@@ -34,6 +34,7 @@ import Bullet from '../Bullet/Bullet';
 import CartItem from '../CartItem/CartItem';
 import MenuItem from '../MenuItem/MenuItem';
 import SearchedItem from '../SearchedItem/SearchedItem';
+import MapLocation from '../MapLocation/MapLocation';
 // import SliderCenterMode from '../slider-center-mode/SliderCenterMode';
 // import SliderWithThumbnails from '../slider-with-thumbnails/SliderWithThumbnails';
 // import ImageSlider from '../slider/Slider';
@@ -252,6 +253,8 @@ const PlayGround: React.FC<PlayGroundProps> = () => {
         />
 
         <SearchedItem />
+
+        <MapLocation />
       </div>
 
       <h2>Sliders</h2>

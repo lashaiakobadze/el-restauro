@@ -2,6 +2,8 @@
 import SearchedItem from '@/components/SearchedItem/SearchedItem';
 import styles from './page.module.css';
 import Image from 'next/image';
+import MapComponent from '@/components/Map/Map';
+import { MapProvider } from '@/components/Map/map-provider';
 
 const Page = () => {
   return (
@@ -71,16 +73,13 @@ const Page = () => {
           <SearchedItem />
           <SearchedItem />
           <SearchedItem />
-          <SearchedItem />
-          <SearchedItem />
-          <SearchedItem />
-          <SearchedItem />
-          <SearchedItem />
-          <SearchedItem />
-          <SearchedItem />
         </div>
       </div>
-      <div className={styles.map}></div>
+      <div className={styles.map}>
+        <MapProvider>
+          <MapComponent />
+        </MapProvider>
+      </div>
     </div>
   );
 };
