@@ -3,9 +3,9 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Header.module.css';
-import MapBtn from '../MapBtn/MapBtn';
-import GeneralFilter from '../GeneralFilter/GeneralFilter';
-import GeneralActions from '../GeneralActions/GeneralActions';
+import MapBtn from '../../components/MapBtn/MapBtn';
+import GeneralFilter from '../../components/GeneralFilter/GeneralFilter';
+import GeneralActions from '../../components/GeneralActions/GeneralActions';
 
 interface HeaderProps {
   props?: string;
@@ -29,7 +29,9 @@ const Header: React.FC<HeaderProps> = ({ props }) => {
           <div className={styles.header}>
             <div className={styles.filters}>
               <GeneralFilter />
-              <MapBtn />
+              <Link href={'/map'}>
+                <MapBtn />
+              </Link>
             </div>
 
             <GeneralActions />
